@@ -31,11 +31,11 @@ The highest-value AI I'm seeing for small businesses right now is mostly about a
 
 For small businesses, AI consulting isn't about installing enterprise software. It's sitting down, understanding how you actually work, and finding the two or three spots where AI could save real time or produce a better result. Then setting those up and making sure they actually work.
 
-## We're Starting to Offer This
+## This Is a Service We Offer Now
 
-Live Web Studios is building an AI consulting practice. It's early days. But if you've looked at AI and thought *I should be doing something with this and I have no idea where to start*, that's exactly the conversation we're having.
+AI consulting is a live part of what Live Web Studios does. If you've looked at AI and thought *I should be doing something with this and I have no idea where to start*, that's exactly the conversation we have. No waitlist. Just a call, a look at how you actually work, and a plan for the two or three spots where AI earns its keep.
 
-**Want on the early access list?** [Let's talk about AI consulting →](https://livewebstudios.com/services/consulting.html)
+**Want to talk it through?** [Let's talk about AI consulting →](https://livewebstudios.com/services/consulting.html)
 
 ---
 
