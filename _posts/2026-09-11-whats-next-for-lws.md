@@ -27,7 +27,7 @@ We'll keep sharing what the data tells us in future posts.
 
 ## The AI Consulting Practice
 
-This is the next chapter. We're building an offer around helping small businesses figure out what AI can actually do for their specific operation. Not the hype version. The practical one. It launches in early 2027. Want to hear about it first? Get on the list.
+This is the next chapter, and it's open now. We help small businesses figure out what AI can actually do for their specific operation. Not the hype version. The practical one. Want to see what that looks like for your business? Let's talk.
 
 ## Thank You
 
