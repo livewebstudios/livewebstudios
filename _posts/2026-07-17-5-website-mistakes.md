@@ -1,7 +1,7 @@
 ---
 title: "5 Website Mistakes Small Businesses Make That Kill Their Google Rankings"
 date: 2026-07-17
-description: "After 20 years of building small business websites, these are the mistakes I see most. The good news. They're almost always fixable."
+description: "After 23 years of building small business websites, these are the mistakes I see most. The good news. They're almost always fixable."
 tags: ["SEO mistakes", "small business website", "Google rankings", "website tips", "on-page SEO"]
 image: "/images/blog/5-website-mistakes.jpg"
 draft: false
