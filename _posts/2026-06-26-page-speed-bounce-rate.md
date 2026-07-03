@@ -1,7 +1,7 @@
 ---
 title: "Speed Kills Your Bounce Rate: What Page Load Time Really Does to Your Business"
 date: 2026-06-26
-description: "A 1-second delay in page load time can reduce conversions by 7%. Here's what that math looks like for a small business site. And what you can do about it."
+description: "Slow pages cost you visitors before they read a word. Here's what the load-time research actually shows, and what you can do about it."
 tags: ["page speed", "bounce rate", "website performance", "conversions", "Core Web Vitals"]
 image: "/images/blog/page-speed-bounce-rate.jpg"
 draft: false
@@ -15,7 +15,7 @@ Bounce rate is the percentage of visitors who land on your site and leave withou
 
 ## What the Research Says
 
-Google's own data has shown that as page load time goes from 1 second to 3 seconds, the probability of a visitor bouncing increases by 32%. From 1 second to 5 seconds, it jumps to 90%. By the time you're at 10 seconds, the probability of losing that visitor is over 120% higher than a fast site. And some older WordPress sites hit 10 seconds on a mobile connection.
+Google's benchmark research on mobile load time put hard numbers on this, and the numbers have held up for years. As page load goes from 1 second to 3 seconds, the probability of a visitor bouncing climbs 32%. From 1 second to 5 seconds, it jumps 90%. By 10 seconds, the odds of losing that visitor run over 120% higher than a fast site. And some older WordPress sites still hit 10 seconds on a mobile connection.
 
 That's not a typo. The compounding effect is that dramatic.
 
