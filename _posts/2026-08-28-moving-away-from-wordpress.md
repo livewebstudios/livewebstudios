@@ -1,7 +1,7 @@
 ---
 title: "Why We're Moving Away From WordPress (And What We're Moving To)"
 date: 2026-08-28
-description: "After 20 years of building WordPress sites, Live Web Studios is moving to a modern AI-built stack. Here's the honest reason why. And what it means if you're already a client."
+description: "After 23 years of building WordPress sites, Live Web Studios is moving to a modern AI-built stack. Here's the honest reason why. And what it means if you're already a client."
 tags: ["WordPress", "web design transition", "AI websites", "LWS news", "hosting"]
 image: "/images/blog/moving-away-from-wordpress.jpg"
 draft: false
