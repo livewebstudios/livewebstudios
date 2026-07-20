@@ -175,7 +175,17 @@
           '<li class="nav-mobile-vertical"><a href="' + p + 'live-band-web-studios/index.html">Live Band Web Studios</a></li>' +
           '<li><a href="' + p + 'portfolio.html" data-page="portfolio">Portfolio</a></li>' +
           '<li><a href="' + p + 'blog/" data-page="blog">Blog</a></li>' +
-          '<li><a href="' + p + 'contact.html" data-page="contact" class="nav-contact-link">Contact</a></li>' +
+          /* Newsletter — surfaced on mobile, where the Contact dropdown doesn't open */
+          '<li class="nav-mobile-vertical"><a href="' + p + 'newsletter.html" data-page="newsletter">Newsletter</a></li>' +
+
+          /* CONTACT — simple dropdown (Contact + Newsletter) */
+          '<li class="nav-item">' +
+            '<a href="' + p + 'contact.html" data-page="contact" class="nav-contact-link" aria-haspopup="true" aria-expanded="false">Contact</a>' +
+            '<div class="nav-dropdown contact-dropdown" role="menu">' +
+              navItem('contact.html',    '<path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/>', 'Contact') +
+              navItem('newsletter.html', '<path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/>',                                                              'Newsletter') +
+            '</div>' +
+          '</li>' +
         '</ul>' +
         '<a href="' + p + 'contact.html" class="btn-primary nav-cta">Get a Proposal <span class="btn-arrow">&rarr;</span></a>' +
         '<button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks" id="navToggle">&#9776;</button>' +
@@ -210,6 +220,13 @@
       logoLink.style.display = 'inline-block';
       logoImg.parentNode.insertBefore(logoLink, logoImg);
       logoLink.appendChild(logoImg);
+    }
+
+    /* Newsletter link in the footer utility row, alongside Privacy / Terms */
+    var utilityRow = footer.querySelector('.footer-bottom span');
+    if (utilityRow && utilityRow.innerHTML.indexOf('newsletter.html') === -1) {
+      utilityRow.insertAdjacentHTML('beforeend',
+        ' &middot; <a href="' + p + 'newsletter.html">Newsletter</a>');
     }
 
     /* Only run injection + migration once */
