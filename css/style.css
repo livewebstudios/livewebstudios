@@ -2995,6 +2995,12 @@ main img:not(.clutch-badge):not(.lws-face):not(.card-icon):not([aria-hidden]) {
 .shot-grid { display: grid; gap: 0.85rem; }
 .shot-grid--photos { grid-template-columns: repeat(4, 1fr); }
 .shot-grid--cards  { grid-template-columns: repeat(2, 1fr); max-width: 520px; }
+.shot-grid--videos { grid-template-columns: 1fr; gap: 1.1rem; }
+.style-video {
+  display: block; width: 100%; height: auto; object-fit: contain;
+  border: 1px solid var(--lws-border); border-radius: var(--radius-card);
+  aspect-ratio: 16 / 9; background: #000;
+}
 
 .lb-shot {
   display: block; padding: 0; border: 1px solid var(--lws-border); margin: 0;
