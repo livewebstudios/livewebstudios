@@ -18,7 +18,10 @@
   --lbs-navy:    #0a0f1a;
   --lbs-cyan:    #2ab8d4;
   --lbs-cyan-dk: #1f93ab;
-  --lbs-gold:    #c9922a;
+  --lbs-gold:    #c9922a;   /* deep gold: borders, rules, badge fills. Structural only. */
+  --lbs-gold-text: #fac777; /* light gold: ANY gold type on a dark bg. Matches the parent
+                               site's --lws-splash so LWS and LBS read as one brand.
+                               12.4:1 on --lbs-navy. Never use --lbs-gold for type. */
   --lbs-white:   #ffffff;
   --lbs-offwhite:#e8e6e0;
   --lbs-dark:    #0e0e0e;
@@ -226,7 +229,7 @@
 
 .lbs-scope .eyebrow {
   font-family: var(--lbs-font-display);
-  color: var(--lbs-gold);
+  color: var(--lbs-gold-text);
   font-size: 0.95rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -332,6 +335,17 @@
 /* Keep the gold eyebrow legible over photo sections (non-hero too) */
 .lbs-scope .bg-photo .eyebrow { text-shadow: 0 1px 10px rgba(0,0,0,0.6); }
 
+/* Form heros (.form-hero) sit over stage photos but never got the .lbs-hero
+   shadow treatment, so the small muted sub-line sank into the image.
+   Two layers: a tight dark edge for definition, plus a wide soft halo that
+   darkens the photo right behind the glyphs. Lifts the copy off the picture
+   without touching any text color, so the hierarchy stays as designed. */
+.lbs-scope .form-hero h1,
+.lbs-scope .form-hero .sub,
+.lbs-scope .form-hero .optnote {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.9), 0 2px 18px rgba(0,0,0,0.75);
+}
+
 /* Body copy in LBS heros over photos/videos: brighten the muted grey
    (default --lbs-muted) so it's legible. */
 .lbs-hero .section-sub,
@@ -402,12 +416,12 @@
 .lbs-scope .price-card { background: var(--lbs-mid); border: 1px solid var(--lbs-border); border-radius: var(--lbs-radius); padding: 2.25rem; display: flex; flex-direction: column; }
 .lbs-scope .price-card--pro { border-color: var(--lbs-cyan); box-shadow: 0 0 0 1px var(--lbs-cyan), 0 18px 50px rgba(0,0,0,.35); }
 .lbs-scope .badge { display: inline-block; font-family: var(--lbs-font-display); font-size: 13px; letter-spacing: 0.12em; padding: 4px 14px; border-radius: 999px; text-transform: uppercase; margin-bottom: 1rem; align-self: flex-start; }
-.lbs-scope .badge--gold { background: rgba(201,146,42,0.15); color: var(--lbs-gold); border: 1px solid rgba(201,146,42,0.4); }
+.lbs-scope .badge--gold { background: rgba(201,146,42,0.15); color: var(--lbs-gold-text); border: 1px solid rgba(201,146,42,0.4); }
 .lbs-scope .badge--cyan { background: var(--lbs-cyan); color: var(--lbs-navy); }
 .lbs-scope .price-amt { font-family: var(--lbs-font-display); font-size: 3.5rem; color: var(--lbs-white); line-height: 1; }
-.lbs-scope .price-amt--sm { font-size: 2.6rem; color: var(--lbs-gold); }
+.lbs-scope .price-amt--sm { font-size: 2.6rem; color: var(--lbs-gold-text); }
 .lbs-scope .price-note { font-size: 14px; color: var(--lbs-muted); }
-.lbs-scope .price-build { font-size: 1rem; color: var(--lbs-gold); }
+.lbs-scope .price-build { font-size: 1rem; color: var(--lbs-gold-text); }
 .lbs-scope .price-plus { font-family: var(--lbs-font-display); font-size: 1.5rem; color: var(--lbs-muted); }
 .lbs-scope .feature-list { margin: 1.5rem 0; display: flex; flex-direction: column; gap: .65rem; }
 .lbs-scope .feature-list li { display: flex; gap: .6rem; align-items: flex-start; font-size: .95rem; color: var(--lbs-offwhite); }
@@ -434,7 +448,7 @@
 .lbs-scope .portfolio-card__thumb span { font-family: var(--lbs-font-display); font-size: 2rem; color: var(--lbs-cyan); letter-spacing: .04em; line-height: 1.05; }
 .lbs-scope .portfolio-card__body { padding: 1.75rem; display: flex; flex-direction: column; flex: 1; }
 .lbs-scope .portfolio-card__name { font-size: 1.6rem; margin: .5rem 0 .25rem; }
-.lbs-scope .portfolio-card__genre { font-family: var(--lbs-font-display); color: var(--lbs-gold); font-size: .95rem; letter-spacing: .08em; }
+.lbs-scope .portfolio-card__genre { font-family: var(--lbs-font-display); color: var(--lbs-gold-text); font-size: .95rem; letter-spacing: .08em; }
 .lbs-scope .portfolio-card__bio { color: var(--lbs-muted); font-size: .92rem; margin: .85rem 0 1.25rem; }
 .lbs-scope .portfolio-card__link { margin-top: auto; font-weight: 500; display: inline-flex; gap: .35rem; align-items: center; }
 
@@ -456,9 +470,9 @@
 
 /* ---------- Utility ---------- */
 .lbs-scope .note-block { background: var(--lbs-mid); border: 1px solid var(--lbs-border); border-radius: var(--lbs-radius); padding: 1.5rem; font-size: .98rem; color: var(--lbs-offwhite); }
-.lbs-scope .contact-line { color: var(--lbs-gold); font-family: var(--lbs-font-display); letter-spacing: .05em; font-size: 1.1rem; }
+.lbs-scope .contact-line { color: var(--lbs-gold-text); font-family: var(--lbs-font-display); letter-spacing: .05em; font-size: 1.1rem; }
 .lbs-scope .mt-1 { margin-top: 1rem; } .lbs-scope .mt-2 { margin-top: 2rem; } .lbs-scope .mb-1 { margin-bottom: 1rem; }
-.lbs-scope .text-gold { color: var(--lbs-gold); } .lbs-scope .text-cyan { color: var(--lbs-cyan); }
+.lbs-scope .text-gold { color: var(--lbs-gold-text); } .lbs-scope .text-cyan { color: var(--lbs-cyan); }
 .lbs-scope .text-sm { font-size: .95rem; }
 .lbs-scope .gap-15 { gap: 1.5rem; }
 .lbs-scope .inline-block { display: inline-block; }
